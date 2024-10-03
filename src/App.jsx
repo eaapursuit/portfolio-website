@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       
-      <div className="text-black p-4 rounded-none  bg-site bg-no-repeat bg-cover overflow-hidden h-[4000px]">
+      <div className="text-black rounded-none  bg-site bg-no-repeat bg-cover overflow-hidden">
         <Header />
         <Banner />
         <Nav />
@@ -21,7 +21,7 @@ function App() {
         <Services />
         <Work />
         <Contact />
-        <div classname=""></div>
+        <div className="h-[4000px]"></div>
       </div>
     </>
   )

@@ -1,4 +1,6 @@
-const FadeIn = (direction, delay) => {
+import React from "react";
+
+export const fadeIn = (direction, delay) => {
     return {
         hidden: {
             y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
@@ -18,6 +20,3 @@ const FadeIn = (direction, delay) => {
         },
     };
 }
-
-
-export default FadeIn 
