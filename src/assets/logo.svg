@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150">
   <defs>
     <linearGradient id="brown_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#d2b48c" />
-      <stop offset="33%" stop-color="#c69c6d" />
-      <stop offset="67%" stop-color="#b5947e" />
-      <stop offset="100%" stop-color="#a08679" />
+      <stop offset="0%" stop-color="#8b0000" />
+      <stop offset="33%" stop-color="#a0522d" />
+      <stop offset="67%" stop-color="#8b4513" />
+      <stop offset="100%" stop-color="#d2691e" />
+
+      #8b0000 21.43%, #a0522d 50.63%, #8b4513 100%, #d2691e
     </linearGradient>
   </defs>
-  <text x="10" y="70" fill="url(#brown_gradient)" font-size="40" font-family="Arial">
+  <text x="10" y="40" fill="url(#brown_gradient)" font-size="20" font-family="Arial">
   <tspan>Elisha Abochie-Ansah</tspan>
   <animate attributeName='x' from='10' to='50' dur='1s' repeatCount='indefinite'/>
   </text>
-  <text x="10" y="110" fill="url(#brown_gradient)" font-size="16" font-family="Arial">
+  <text x="10" y="50" fill="white" font-size="10" font-family="Arial">
   <tspan>ee-LYE-shuh Ab-oh-chee An-sah</tspan>
   <animate attributeName='x' from='10' to='50' dur='1s' repeatCount='indefinite'/></text>
 </svg>

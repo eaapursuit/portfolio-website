@@ -21,7 +21,7 @@ export default {
     extend: {
       colors: {
         primary: '#0a0a0a',
-        accent: '#8B4513',
+        accent: '#a08679',
       },
       letterSpacing: {
         '10%': '0.1em',

@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       
-      <div className="text-black rounded-none  bg-site bg-no-repeat bg-cover overflow-hidden">
+      <div className="text-white rounded-none  bg-site bg-no-repeat bg-cover overflow-hidden">
         <Header />
         <Banner />
         <Nav />
