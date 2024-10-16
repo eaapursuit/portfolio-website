@@ -11,9 +11,8 @@
   </defs>
   <text x="10" y="40" fill="url(#brown_gradient)" font-size="20" font-family="Arial">
   <tspan>Elisha Abochie-Ansah</tspan>
-  <animate attributeName='x' from='10' to='50' dur='1s' repeatCount='indefinite'/>
   </text>
   <text x="10" y="50" fill="white" font-size="10" font-family="Arial">
   <tspan>ee-LYE-shuh Ab-oh-chee An-sah</tspan>
-  <animate attributeName='x' from='10' to='50' dur='1s' repeatCount='indefinite'/></text>
+  </text>
 </svg>
