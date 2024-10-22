@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../assets/headshot.png";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import ImageWebP from "../assets/headshot.webp";
+import { FaGithub, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -12,9 +13,9 @@ const Banner = () => {
       id="home"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+        <div className="flex flex-col md:flex-row items-center gap-y-8 sm:gap-x-12">
           {/* {text} */}
-          <div className="flex-1 text-center font-secondary lg:text-left">
+          <div className="flex-1 text-center font-secondary sm:text-left">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -22,7 +23,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
             >
-              Elisha <span>Abochie-Ansah</span>
+              Elisha Abochie-Ansah
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -47,21 +48,23 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
-            <motion.p 
-            variants={fadeIn("up", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="mb-8 max-w-lg mx-auto lg:mx-0 ">
+            <motion.p
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-8 max-w-lg mx-auto sm:mx-0 "
+            >
               Incididunt adipisicing in ullamco officia reprehenderit duis do ut
               est eu nulla.{" "}
             </motion.p>
-            <motion.div 
-            variants={fadeIn("up", 0.6)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
+            <motion.div
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto sm:mx-0"
+            >
               <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base">
                 Contact me
               </button>
@@ -73,31 +76,29 @@ const Banner = () => {
               </a>
             </motion.div>
             {/* {socials} */}
-            <motion.div 
-            variants={fadeIn("up", 0.7)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-                <a href="#">
-                  <FaYoutube />
-                </a>
-                <a href="#">
-                  <FaGithub />
-                </a>
-              </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex text-[20px] gap-x-6 max-w-max mx-auto sm:mx-0"
+            >
+              <a href="#">
+                <FaYoutube />
+              </a>
+              <a href="#">
+                <FaGithub />
+              </a>
+            </motion.div>
           </div>
           {/* {image} */}
-          <motion.div 
-          variants={fadeIn("down", 0.5)}
-          initial="hidden"
-          whileInView={"show"}
-          className=" lg:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto">
-            <img
-              src={Image}
-              alt=""
-              className="w-1/2 h-auto sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 object-cover"
-            />
+          <motion.div
+            variants={fadeIn("down", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            className=" flex-1 max-w-[320px] sm:max-w-[482px]"
+          >
+            <img src={Image} alt="Elisha Abochie-Ansah" className="w-full h-auto object-cover" />
           </motion.div>
         </div>
       </div>
