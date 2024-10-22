@@ -30,9 +30,9 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 mt-10 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="mr-4">I am a </span>
+              <span className="mr-4 ">I am a </span>
               <TypeAnimation
                 sequence={[
                   "Developer",
@@ -55,8 +55,6 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto sm:mx-0 "
             >
-              Incididunt adipisicing in ullamco officia reprehenderit duis do ut
-              est eu nulla.{" "}
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

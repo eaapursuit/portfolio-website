@@ -24,8 +24,11 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[320px] bg-top"
-          ></motion.div>
+            className="flex-1 max-w-[320px] sm:max-w-[482px] justify-center items-center"
+          ><img
+          src={Image}
+          alt="headshot"
+          className="object-contain w-full h-full"/></motion.div>
           {/* {text} */}
           <motion.div 
           variants={fadeIn('left', 0.5)}
@@ -65,9 +68,9 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <button className="btn btn-lg"> Contact Me</button>
-              <a href='#' className="text-gradient btn-link">
+            <div className="flex gap-x-8 items-center">
+              <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base"> Contact Me</button>
+              <a href='#' className="bg-gradient-to-r text-transparent bg-clip-text from-[#d8cbc4] to-[#765341] font-bold font-primary hover:from-[#765341] hover:to-[#d8cbc4] text-base btn-link">
                 My Portfolio
                 </a>
             </div>
