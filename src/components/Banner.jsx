@@ -81,7 +81,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto sm:mx-0"
             >
-              <a href="www.youtube.com/@eliTheCoder93" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@eliTheCoder93" target="_blank" rel="noopener noreferrer">
                 <FaYoutube />
               </a>
               <a href="https://github.com/eaapursuit" target="_blank" rel="noopener noreferrer">
