@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import Image from "../assets/headshot.png"
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -23,8 +24,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px]
-            mix-blend-lighten bg-top"
+            className="flex-1 bg-about bg-contain bg-no-repeat h-[320px] bg-top"
           ></motion.div>
           {/* {text} */}
           <motion.div 
@@ -38,13 +38,9 @@ const About = () => {
               I'm a Freelance Front-end Developer with 2 years of experience.
             </h3>
             <p className="mb-6">
-              Do laboris mollit labore minim ipsum. Nisi incididunt veniam ipsum
-              irure veniam reprehenderit dolor consectetur id voluptate. Laboris
-              officia excepteur ipsum consectetur velit aliquip ut pariatur.
-              Nulla ea commodo adipisicing consequat mollit sint ut est do culpa
-              ipsum velit. Do esse eu dolor laboris pariatur dolore eu cupidatat
-              eiusmod magna ea dolore aliquip nisi. Laboris do aute eiusmod
-              nulla mollit dolor reprehenderit exercitation ullamco enim.
+              I come from a diverse background with about 6 years as a personal trainer working with collegiate
+              and professional athletes. During the pandemic, I began making my fitness presence known online and worked as a virtual performance coach in the fitness tech space. Since then, I've completed a 13 month long
+              software engineering fellowship at Pursuit, which is based out of Long Island City, New York
             </p>
             {/* {stats} */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
