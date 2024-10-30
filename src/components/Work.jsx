@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+ 
 
 const Work = () => {
     return (

@@ -7,7 +7,8 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
+    triggerOnce: true,
   });
 
   return (
@@ -18,17 +19,7 @@ const About = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
-          {/* {img} */}
-          <motion.div
-          variants={fadeIn('right', 0.3)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{once: false, amount: 0.3 }}
-            className="flex-1 max-w-[320px] sm:max-w-[482px] justify-center items-center"
-          ><img
-          src={Image}
-          alt="headshot"
-          className="object-contain w-full h-full"/></motion.div>
+
           {/* {text} */}
           <motion.div 
           variants={fadeIn('left', 0.5)}
@@ -43,7 +34,7 @@ const About = () => {
             <p className="mb-6">
               I come from a diverse background with about 6 years as a personal trainer working with collegiate
               and professional athletes. During the pandemic, I began making my fitness presence known online and worked as a virtual performance coach in the fitness tech space. Since then, I've completed a 13 month long
-              software engineering fellowship at Pursuit, which is based out of Long Island City, New York
+              software engineering fellowship at Pursuit, which is based out of Long Island City, New York.
             </p>
             {/* {stats} */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -59,7 +50,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={5} duration={3}/> : null
+                  {inView ? <CountUp start={0} end={3} duration={3}/> : null
                   }
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
