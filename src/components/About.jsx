@@ -50,7 +50,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={3} duration={3}/> : null
+                  {inView ? <CountUp start={0} end={1} duration={3}/> : null
                   }
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
@@ -59,12 +59,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-8 items-center">
+            {/* <div className="flex gap-x-8 items-center">
               <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base"> Contact Me</button>
               <a href='#' className="bg-gradient-to-r text-transparent bg-clip-text from-[#d8cbc4] to-[#765341] font-bold font-primary hover:from-[#765341] hover:to-[#d8cbc4] text-base btn-link">
                 My Portfolio
                 </a>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

@@ -14,7 +14,7 @@ const Nav = () => {
         className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-3xl 
           max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50"
       >
-        {['home', 'about', 'services', 'work', 'contact'].map((item) => (
+        {['home', 'about', 'work', ].map((item) => (
        <Link
           key={item}
           to={item}
@@ -31,7 +31,7 @@ const Nav = () => {
         >
           {item === 'home' && <BiHomeAlt />}
           {item === 'about' && <BiUser />}
-          {item === 'services' && <BsClipboardData />}
+          {/* {item === 'services' && <BsClipboardData />} */}
           {item === 'work' && <BsBriefcase />}
           {item === 'contact' && <BsChatSquareText />}
         </Link>   

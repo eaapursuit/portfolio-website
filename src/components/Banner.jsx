@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../assets/headshot.png";
 import ImageWebP from "../assets/headshot.webp";
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -63,7 +63,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto sm:mx-0"
             >
-              <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base">
+              {/* <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base">
                 Contact me
               </button>
               <a
@@ -71,7 +71,7 @@ const Banner = () => {
                 className="bg-gradient-to-r text-transparent bg-clip-text from-[#d8cbc4] to-[#765341] font-bold font-primary hover:from-[#765341] hover:to-[#d8cbc4] text-base"
               >
                 My Portfolio{" "}
-              </a>
+              </a> */}
             </motion.div>
             {/* {socials} */}
             <motion.div
@@ -86,6 +86,9 @@ const Banner = () => {
               </a>
               <a href="https://github.com/eaapursuit" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/ekaansah" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
