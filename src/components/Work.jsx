@@ -6,11 +6,18 @@ import { fadeIn } from "../variants";
 // import Img2 from '../assets/OptimaEmissionsComplianceReport.png'
 // import Img3 from '../assets/OptimaEnergyAnalysis.png'
 import Img4 from '../assets/OptimaLandingPage.png'
+import Mancala from '../assets/MancalaBoard.png'
 
 const Work = () => {
 
-    const handleClick = () => {
-        window.location.href='https://optimanyc.netlify.app';
+    const urls = {
+        optima: 'https://optimanyc.netlify.app',
+        mancala: 'https://us-mancala.netlify.app'
+        // cscsTrivia:,
+    }
+    
+    const handleClick = (urlType) => {
+        window.location.href=urls[urlType]
     };
 
     return (
@@ -20,7 +27,33 @@ const Work = () => {
                     <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
                         {/* {text} */}
                         <div>
-                            <h2 className="font-primary text-[32px] mb-6 tracking-[10%] uppercaseleading-tight text-accent" > My Fullstack Web Apps </h2>
+                            <h2 className="font-primary text-[32px] mb-6 tracking-[10%] uppercaseleading-tight text-accent" > My Projects </h2>
+                        <p className="max-w-sm mb-16">Optima is a platform that assists building owners in NYC with visualizing, maintaining, and improving their carbon emissions as mandated by New York Local Law 97. </p>
+                        <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base btn-sm" onClick={() => handleClick('optima')}>Visit Optima</button>
+                        </div>
+                        {/* {image} */}
+                        <div className="group relative overflow-hidden border-2 border-white/50 max-w-xs rounded-xl">
+                          {/* {overlay} */}
+                        <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
+                          {/* {img} */}
+                          <img className="group-hover:scale-125 transition-all duration-500 max-w-xs" src={Img4} alt =''/>
+                          {/* {pretitle} */}
+                          
+                        </div>
+                        <div href='mancala'>
+                        <p className="max-w-sm mb-16">Crafted a fully interactive Mancala game in React featuring marble animations with React Spring, a responsive game board, and an AI-powered hint system to guide players through strategic gameplay. This project demonstrates my ability to combine engaging UI elements with intelligent assistance features to create an enhanced gaming experience. </p>
+                        <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base btn-sm" onClick={() => handleClick('mancala')}>Play Mancala</button>
+                        </div>
+                        {/* {image} */}
+                        <div className="group relative overflow-hidden border-2 border-white/50 max-w-xs rounded-xl">
+                          {/* {overlay} */}
+                        <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
+                          {/* {img} */}
+                          <img className="group-hover:scale-125 transition-all duration-500 max-w-xs" src={Mancala} alt =''/>
+                          {/* {pretitle} */}
+                          
+                        </div>
+                        <div>
                         <p className="max-w-sm mb-16">Optima is a platform that assists building owners in NYC with visualizing, maintaining, and improving their carbon emissions as mandated by New York Local Law 97. </p>
                         <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base btn-sm" onClick={handleClick}>Visit Optima</button>
                         </div>
@@ -31,8 +64,7 @@ const Work = () => {
                           {/* {img} */}
                           <img className="group-hover:scale-125 transition-all duration-500 max-w-xs" src={Img4} alt =''/>
                           {/* {pretitle} */}
-                        {/* <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                            <span className="bg-btn-gradient">Full Stack Development</span></div> */}
+                          
                         </div>
                     </div>
                     
