@@ -12,7 +12,7 @@ const Work = () => {
 
     const urls = {
         optima: 'https://optimanyc.netlify.app',
-        mancala: 'https://us-mancala.netlify.app'
+        mancala: 'https://mancala-prod.netlify.app'
         // cscsTrivia:,
     }
     
