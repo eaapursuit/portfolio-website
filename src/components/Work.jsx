@@ -17,7 +17,7 @@ const Work = () => {
     }
     
     const handleClick = (urlType) => {
-        window.location.href=urls[urlType]
+        window.open(urls[urlType], '_blank');
     };
 
     return (
@@ -40,7 +40,7 @@ const Work = () => {
                           {/* {pretitle} */}
                           
                         </div>
-                        <div href='mancala'>
+                        <div >
                         <p className="max-w-sm mb-16">Crafted a fully interactive Mancala game in React featuring marble animations with React Spring, a responsive game board, and an AI-powered hint system to guide players through strategic gameplay. This project demonstrates my ability to combine engaging UI elements with intelligent assistance features to create an enhanced gaming experience. </p>
                         <button className="bg-btn-gradient hover:bg-btn-gradient-hover rounded-3xl font-primary text-white font-medium h-[56px] px-10 text-base btn-sm" onClick={() => handleClick('mancala')}>Play Mancala</button>
                         </div>
